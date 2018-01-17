@@ -13,5 +13,12 @@
     "node.js"
   ],
   "author": "Steffen Langer",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.13.0",
+    "config": "^1.29.2",
+    "debug": "^3.1.0",
+    "moment": "^2.20.1",
+    "mongoose": "^4.13.9"
+  }
 }
