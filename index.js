@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 const migraid     = require('commander');
 const packageJson = require('./package');
 const Migrator    = require('./lib/migrator');
