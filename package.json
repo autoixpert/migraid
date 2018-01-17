@@ -1,24 +1,27 @@
 {
-  "name": "migraid",
-  "version": "0.0.1",
-  "description": "A mongoose document\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D-focused document migration tool.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "migration",
-    "migrate",
-    "mongoose",
-    "node.js"
-  ],
-  "author": "Steffen Langer",
-  "license": "MIT",
-  "dependencies": {
-    "commander": "^2.13.0",
-    "config": "^1.29.2",
-    "debug": "^3.1.0",
-    "moment": "^2.20.1",
-    "mongoose": "^4.13.9"
-  }
+    "name": "migraid",
+    "version": "0.0.1",
+    "description": "A mongoose document\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D-focused document migration tool.",
+    "main": "index.js",
+    "bin": {
+        "migraid": "./index.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "migration",
+        "migrate",
+        "mongoose",
+        "node.js"
+    ],
+    "author": "Steffen Langer",
+    "license": "MIT",
+    "dependencies": {
+        "commander": "^2.13.0",
+        "config": "^1.29.2",
+        "debug": "^3.1.0",
+        "moment": "^2.20.1",
+        "mongoose": "^4.13.9"
+    }
 }
