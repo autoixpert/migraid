@@ -53,10 +53,10 @@ migraid
     .description('Execute all migrations that were not executed on this database.')
     .action(async function () {
         // Connect to Mongoose
-        await migrator.connect();
+        const connection = await migrator.connect();
 
         try {
-            const migratedFileNames = await migrator.up();
+            const migratedFileNames = await migrator.up(connection);
         }
         catch (error) {
             console.error('Migration failedl.', error);
