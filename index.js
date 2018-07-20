@@ -53,7 +53,7 @@ migraid
     .description('Execute all migrations that were not executed on this database.')
     .action(async function () {
         // Connect to Mongoose
-        const connection = await migrator.connect();
+        const connection = (await migrator.connect()).connection;
 
         try {
             const migratedFileNames = await migrator.up(connection);
