@@ -1,6 +1,6 @@
 {
     "name": "migraid",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "A mongoose document-focused document migration tool.",
     "main": "index.js",
     "bin": {
@@ -18,10 +18,10 @@
     "author": "Steffen Langer",
     "license": "MIT",
     "dependencies": {
-        "commander": "^2.13.0",
-        "config": "^1.29.2",
-        "debug": "^3.1.0",
-        "moment": "^2.20.1",
-        "mongoose": "^5.2.2"
+        "commander": "^4.0.1",
+        "config": "^3.2.4",
+        "debug": "^4.1.1",
+        "moment": "^2.24.0",
+        "mongoose": "^5.7.13"
     }
 }

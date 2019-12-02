@@ -7,8 +7,7 @@ const config      = require('config');
 // Initialize the migrator with the options defined in config/[environment].js
 const migrator = new Migrator();
 
-migraid
-    .version(packageJson.version);
+migraid.version(packageJson.version);
 
 // Handle uncaught promise errors
 process.on('unhandledRejection', (reason, p) => {
