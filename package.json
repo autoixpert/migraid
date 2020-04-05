@@ -1,6 +1,6 @@
 {
     "name": "migraid",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "A mongoose document-focused document migration tool.",
     "main": "index.js",
     "bin": {
