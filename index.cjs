@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 const migraid     = require('commander');
-const packageJson = require('./package');
-const Migrator    = require('./lib/migrator');
+const packageJson = require('./package.json');
+const Migrator    = require('./lib/migrator.js');
 const config      = require('config');
 
 // Initialize the migrator with the options defined in config/[environment].js
