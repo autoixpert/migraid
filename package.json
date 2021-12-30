@@ -3,6 +3,7 @@
     "version": "0.0.7",
     "description": "A mongoose document-focused document migration tool.",
     "main": "index.js",
+    "type": "module",
     "bin": {
         "migraid": "./index.js"
     },
