@@ -1,13 +1,10 @@
 #! /usr/bin/env node
-const migraid     = require('commander');
-const packageJson = require('./package.json');
-const Migrator    = require('./lib/migrator.js');
-const config      = require('config');
+import migraid from 'commander';
+import {Migrator} from './lib/migrator.mjs';
+import config from 'config';
 
 // Initialize the migrator with the options defined in config/[environment].js
 const migrator = new Migrator();
-
-migraid.version(packageJson.version);
 
 // Handle uncaught promise errors
 process.on('unhandledRejection', (reason, p) => {
@@ -17,8 +14,7 @@ process.on('unhandledRejection', (reason, p) => {
 //*****************************************************************************
 //  Prevent Beta Scripts From Being Added to Production
 //****************************************************************************/
-const isBeta = process.cwd()
-    .includes('beta');
+const isBeta = process.cwd().includes('beta');
 console.log('Current working directoy: ' + process.cwd());
 if (isBeta) {
     console.log('Detected BETA directory. This is from where the scripts will be loaded.');

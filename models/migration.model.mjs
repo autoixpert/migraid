@@ -1,8 +1,8 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 let migrationModel;
 
-module.exports = function ({migrationCollection}) {
+export default function ({migrationCollection}) {
 
     // Cache model
     if (migrationModel) {

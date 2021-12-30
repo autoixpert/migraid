@@ -2,10 +2,10 @@
     "name": "migraid",
     "version": "0.0.7",
     "description": "A mongoose document-focused document migration tool.",
-    "exports": "./index.cjs",
+    "exports": "./index.mjs",
     "type": "module",
     "bin": {
-        "migraid": "./index.cjs"
+        "migraid": "./index.mjs"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
