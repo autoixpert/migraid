@@ -22,7 +22,7 @@
         "commander": "^4.0.1",
         "config": "^3.3.6",
         "debug": "^4.1.1",
-        "moment": "^2.24.0",
+        "moment": "^2.29.2",
         "mongoose": "^5.8.1"
     }
 }
